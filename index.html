@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090811">
+<meta name="description" content="NEONX — Cyberpunk community ecosystem">
+<title>NEONX — Digital Ecosystem</title>
+<style>
+:root{--bg:#090811;--panel:#12101d;--panel2:#191426;--line:#30253f;--text:#f5f1ff;--muted:#9c93ad;--purple:#b45cff;--cyan:#42d9e8;--pink:#ed67d7}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% -10%,#28123d 0,transparent 40%),var(--bg);color:var(--text);font:15px Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:245px 1fr}.sidebar{background:#0b0913;border-right:1px solid var(--line);padding:25px 16px;display:flex;flex-direction:column;gap:26px}.brand{font-size:27px;font-weight:950;letter-spacing:4px}.brand span{color:var(--purple)}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;font-weight:600;margin-top:4px}.section-label{font-size:10px;letter-spacing:2px;color:#776d89;padding:0 11px 8px;text-transform:uppercase}.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#b5acc4;text-align:left;padding:12px 13px;border-radius:10px;display:flex;align-items:center;gap:12px;font-size:13px}.nav button:hover,.nav button.active{background:#281637;color:white;box-shadow:inset 3px 0 var(--purple)}.side-bottom{margin-top:auto}.pill{display:inline-flex;align-items:center;gap:6px;background:#251637;color:#d9b6ff;padding:5px 9px;border-radius:30px;font-size:10px}.main{padding:27px clamp(16px,3vw,38px);min-width:0;max-width:1600px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}.crumb{color:var(--purple);font-size:10px;letter-spacing:2px;text-transform:uppercase}.topbar h1{font-size:27px;margin:6px 0 0}.top-actions{display:flex;align-items:center;gap:9px}.btn{border:1px solid #61417c;background:#29183b;color:white;border-radius:9px;padding:10px 14px;font-weight:650;font-size:12px}.btn:hover{filter:brightness(1.2)}.btn.primary{background:linear-gradient(100deg,#963ce0,#5369ef);border:0}.btn.ghost{background:#171321;border-color:var(--line)}.btn.danger{background:#351b2b;border-color:#70334d}.page{display:none}.page.active{display:block}.notice{background:#20142d;border:1px solid #503267;color:#d8c4e9;padding:12px 14px;border-radius:10px;font-size:12px;line-height:1.6;margin-bottom:17px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:16px}.two{display:grid;grid-template-columns:1.3fr 1fr;gap:15px;margin-bottom:16px}.card{background:linear-gradient(145deg,#191526,#100e19);border:1px solid var(--line);border-radius:15px;padding:18px;min-width:0}.card h2{font-size:16px;margin:0 0 14px}.muted{color:var(--muted)}.small{font-size:11px}.stat{font-size:28px;font-weight:850;margin:9px 0 4px;letter-spacing:-1px}.tag{font-size:10px;color:#d6b1ff;background:#2a193b;padding:4px 8px;border-radius:30px}.chart{height:175px;display:flex;align-items:end;gap:10px;padding:15px 5px 0;border-bottom:1px solid #40334d}.chart>div{flex:1;min-width:6px;border-radius:6px 6px 0 0;background:linear-gradient(180deg,var(--purple),#4c48a5);position:relative}.chart span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--muted)}.chart-labels{display:flex;justify-content:space-between;margin-top:26px;color:var(--muted);font-size:9px}.tile{padding:14px;border:1px solid #342741;background:#15111f;border-radius:11px;margin:9px 0}.tile h3{font-size:13px;margin:0 0 6px}.field{display:block;color:#c1b7d0;font-size:12px;margin:12px 0 5px}input,textarea,select{width:100%;background:#0d0b15;color:white;border:1px solid #40334d;border-radius:9px;padding:11px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--purple)}textarea{min-height:100px;resize:vertical}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.feed-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #30263c}.avatar{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,#a74de5,#315bc1);display:grid;place-items:center;font-weight:800;flex:none}.feed-item:last-child{border-bottom:0}.feed-content{flex:1;min-width:0}.feed-content b{font-size:13px}.feed-content p{font-size:12px;line-height:1.65;color:#c9c0d4;margin:7px 0}.feed-meta{font-size:10px;color:var(--muted)}.bar{height:8px;background:#2d2537;border-radius:20px;overflow:hidden}.bar i{height:100%;display:block;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}table{width:100%;border-collapse:collapse;font-size:12px}td,th{text-align:left;padding:12px 8px;border-bottom:1px solid #30263c}th{color:var(--muted);font-weight:500}.footer{text-align:center;color:#716981;font-size:10px;padding:28px 0 5px}.mobile-title{display:none}.toast{position:fixed;right:20px;bottom:20px;background:#29183b;border:1px solid #8050a6;border-radius:10px;padding:12px 16px;font-size:12px;display:none;z-index:9;max-width:calc(100vw - 40px)}.empty{padding:24px;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:850px){.app{grid-template-columns:1fr}.sidebar{padding:14px;border-right:0;border-bottom:1px solid var(--line);gap:14px}.brand{font-size:22px}.nav{grid-template-columns:repeat(3,1fr)}.nav button{justify-content:center;padding:10px 5px;font-size:11px;gap:5px}.side-bottom{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.main{padding:18px 14px}.topbar h1{font-size:22px}.topbar{align-items:flex-start}.top-actions .pill{display:none}}
+@media(max-width:430px){.grid{gap:8px}.card{padding:13px}.stat{font-size:23px}.nav button{font-size:10px}.topbar h1{font-size:19px}.btn{padding:9px 10px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand">NEON<span>X</span><small>DIGITAL COMMUNITY</small></div>
+ <div><div class="section-label">Workspace</div><nav class="nav" id="nav">
+  <button class="active" data-page="overview">◈ Overview</button>
+  <button data-page="analytics">▥ Analytics</button>
+  <button data-page="studio">✧ AI Studio</button>
+  <button data-page="members">♙ Membership</button>
+  <button data-page="community">◎ Community</button>
+  <button data-page="admin">⚙ Admin Panel</button>
+ </nav></div>
+ <div class="side-bottom card"><span class="pill">● DEMO MODE</span><p class="muted small">Data tersimpan di browser ini. Belum terhubung ke server.</p><button class="btn ghost" id="reset" style="width:100%">Reset demo</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="crumb">NEONX / <span id="crumb">OVERVIEW</span></div><h1 id="heading">Dashboard Overview</h1></div><div class="top-actions"><span class="pill">● SYSTEM ONLINE · DEMO</span><button class="btn primary" id="profile">Guest Profile</button></div></header>
+
+<section class="page active" id="page-overview">
+ <div class="notice">Welcome to NEONX. Jelajahi dashboard, buat draft konten, dan kelola feed komunitas. Seluruh angka merupakan data contoh.</div>
+ <div class="grid">
+  <div class="card"><div class="muted small">Community members</div><div class="stat">2,480</div><span class="tag">Sample metric</span></div>
+  <div class="card"><div class="muted small">Content published</div><div class="stat" id="overview-posts">128</div><span class="tag">Sample metric</span></div>
+  <div class="card"><div class="muted small">Engagement score</div><div class="stat">76.8%</div><span class="tag">Illustrative</span></div>
+  <div class="card"><div class="muted small">Active campaigns</div><div class="stat">06</div><span class="tag">Sample metric</span></div>
+ </div>
+ <div class="two">
+  <div class="card"><h2>Community activity</h2><div class="muted small">Illustrative weekly activity</div><div class="chart" id="overview-chart"></div><div class="chart-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div></div>
+  <div class="card"><h2>Quick actions</h2><div class="tile"><h3>Create community post</h3><p class="muted small">Bagikan update kepada komunitas.</p><button class="btn" data-go="community">Open Community →</button></div><div class="tile"><h3>Open AI Studio</h3><p class="muted small">Buat ide dan draft caption.</p><button class="btn" data-go="studio">Launch Studio →</button></div></div>
+ </div>
+ <div class="card"><h2>Recent activity</h2><div id="recent"><div class="feed-item"><div class="avatar">N</div><div><b>Welcome to NEONX</b><div class="feed-meta">Community workspace initialized</div></div></div></div></div>
+</section>
+
+<section class="page" id="page-analytics">
+ <div class="grid">
+  <div class="card"><div class="muted small">Visitors</div><div class="stat">18.4K</div><span class="tag">Sample data</span></div>
+  <div class="card"><div class="muted small">New members</div><div class="stat">+12.6%</div><span class="tag">Sample data</span></div>
+  <div class="card"><div class="muted small">Interactions</div><div class="stat">8,921</div><span class="tag">Sample data</span></div>
+  <div class="card"><div class="muted small">Retention</div><div class="stat">64.2%</div><span class="tag">Sample data</span></div>
+ </div>
+ <div class="two"><div class="card"><h2>Traffic overview</h2><label class="field">Display period</label><select id="period"><option value="week">Last 7 days</option><option value="month">Last 30 days</option><option value="year">Last 12 months</option></select><div class="chart" id="analytics-chart"></div><p class="muted small" style="margin-top:27px">Grafik ilustratif, belum terhubung ke analitik live.</p></div>
+ <div class="card"><h2>Engagement breakdown</h2><div class="field">Content views — 82%</div><div class="bar"><i style="width:82%"></i></div><div class="field">Community replies — 61%</div><div class="bar"><i style="width:61%"></i></div><div class="field">Returning visitors — 64%</div><div class="bar"><i style="width:64%"></i></div></div></div>
+ <div class="card"><h2>Analytics configuration</h2><p class="muted small">Untuk data pengunjung nyata, hubungkan layanan analytics dan backend setelah website diterbitkan.</p></div>
+</section>
+
+<section class="page" id="page-studio">
+ <div class="notice">AI Studio saat ini menggunakan template lokal. Ini bukan AI online dan tidak mengirim data ke layanan eksternal.</div>
+ <div class="two"><div class="card"><h2>✧ Content generator</h2><label class="field">Content type</label><select id="content-type"><option value="meme">Meme concept</option><option value="caption">Social caption</option><option value="announcement">Community announcement</option><option value="poll">Community poll</option></select><label class="field">Topic or keyword</label><input id="topic" placeholder="Contoh: neon city, community, gaming"><label class="field">Preferred tone</label><select id="tone"><option>Cyberpunk</option><option>Funny</option><option>Professional</option><option>Mysterious</option></select><button class="btn primary" id="generate">✧ Generate draft</button><div class="tile" id="output" style="min-height:125px;margin-top:14px"><span class="muted small">Draft akan muncul di sini.</span></div><div class="actions"><button class="btn" id="copy">Copy draft</button><button class="btn ghost" id="clear">Clear</button><button class="btn ghost" id="save-draft">Save draft</button></div></div>
+ <div class="card"><h2>Prompt inspiration</h2><div class="tile"><h3>Neon city concept</h3><p class="muted small">Create a futuristic city-themed community post.</p><button class="btn ghost use-prompt" data-topic="Neon city community">Use idea</button></div><div class="tile"><h3>Weekly community</h3><p class="muted small">Write a weekly update for members.</p><button class="btn ghost use-prompt" data-topic="Weekly community update">Use idea</button></div><div class="tile"><h3>Creative challenge</h3><p class="muted small">Invite members to share creative concepts.</p><button class="btn ghost use-prompt" data-topic="Creative community challenge">Use idea</button></div></div></div>
+ <div class="card"><h2>Saved drafts</h2><div id="draft-list" class="muted small">Belum ada draft tersimpan.</div></div>
+</section>
+
+<section class="page" id="page-members">
+ <div class="notice">Membership pada versi ini hanya simulasi. Tidak ada pembayaran, wallet, atau verifikasi blockchain.</div>
+ <div class="grid"><div class="card"><div class="muted small">Demo members</div><div class="stat">2,480</div><span class="tag">Sample</span></div><div class="card"><div class="muted small">Access tier</div><div class="stat">02</div><span class="tag">Demo levels</span></div><div class="card"><div class="muted small">Private previews</div><div class="stat">08</div><span class="tag">Sample</span></div><div class="card"><div class="muted small">Your status</div><div class="stat" id="tier-status">Guest</div><span class="tag">Local demo</span></div></div>
+ <div class="two"><div class="card"><h2>Choose demo access</h2><div class="tile"><span class="tag">PUBLIC</span><h3 style="margin-top:10px">Explorer</h3><p class="muted small">Akses pengumuman dan feed publik.</p><button class="btn primary choose-tier" data-tier="Explorer">Activate demo access</button></div><div class="tile"><span class="tag">DEMO PRIVATE</span><h3 style="margin-top:10px">Insider</h3><p class="muted small">Pratinjau status akses konten privat.</p><button class="btn choose-tier" data-tier="Insider">Preview insider access</button></div></div><div class="card"><h2>Member benefits</h2><p class="muted small" style="line-height:2">• Community announcements<br>• Creative challenges<br>• Member discussion area<br>• Early content previews<br>• Community event updates</p><div class="notice" id="tier-message">Pilih level demo untuk melihat status akses.</div></div></div>
+</section>
+
+<section class="page" id="page-community">
+ <div class="two"><div class="card"><h2>Create community post</h2><label class="field">Post title</label><input id="post-title" placeholder="Tulis judul..."><label class="field">Message</label><textarea id="post-body" placeholder="Bagikan update kepada komunitas..."></textarea><div class="actions"><button class="btn primary" id="publish">Publish locally</button><button class="btn ghost" id="post-clear">Clear</button></div><p class="muted small">Postingan hanya disimpan di browser ini, belum dipublikasikan ke internet.</p></div><div class="card"><h2>Community guidelines</h2><div class="tile"><h3>Be respectful</h3><p class="muted small">Jaga diskusi tetap ramah dan konstruktif.</p></div><div class="tile"><h3>Share responsibly</h3><p class="muted small">Hindari spam, klaim menyesatkan, dan informasi pribadi.</p></div></div></div>
+ <div class="card"><div style="display:flex;justify-content:space-between;gap:10px"><h2>Community feed</h2><span class="tag" id="post-count">3 posts</span></div><div id="feed"></div></div>
+</section>
+
+<section class="page" id="page-admin">
+ <div class="notice">Admin Panel ini hanya simulasi front-end. Belum memiliki login admin atau proteksi server, jadi jangan gunakan untuk mengelola data sensitif.</div>
+ <div class="grid"><div class="card"><div class="muted small">Saved drafts</div><div class="stat" id="admin-drafts">0</div></div><div class="card"><div class="muted small">Community posts</div><div class="stat" id="admin-posts">3</div></div><div class="card"><div class="muted small">Demo membership</div><div class="stat" id="admin-tier">Guest</div></div><div class="card"><div class="muted small">System</div><div class="stat" style="font-size:20px">Local</div></div></div>
+ <div class="two"><div class="card"><h2>Content management</h2><p class="muted small">Kelola postingan contoh dan ekspor data komunitas.</p><button class="btn" data-go="community">Open community feed</button><div class="actions"><button class="btn ghost" id="export">Export posts JSON</button></div></div><div class="card"><h2>Workspace settings</h2><label class="field">Community display name</label><input id="community-name" value="NEONX Community"><label class="field">Announcement banner</label><textarea id="announcement">Welcome to the NEONX community.</textarea><button class="btn primary" id="save-settings">Save local settings</button><div class="muted small" id="settings-result" style="margin-top:10px"></div></div></div>
+</section>
+<footer class="footer">NEONX ECOSYSTEM · FRONT-END STARTER · DEMO DATA</footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+const defaultPosts=[
+{title:"Welcome to NEONX",body:"Welcome to the community hub. Explore the ecosystem, share ideas, and connect with other creators.",date:"Today"},
+{title:"Creative week is here",body:"This week, share your best futuristic design concepts and community ideas.",date:"Yesterday"},
+{title:"Community update",body:"The NEONX website workspace is ready to explore. Tell us what you would like to see next.",date:"Yesterday"}
+];
+let posts=JSON.parse(localStorage.getItem("neonx_posts")||"null")||defaultPosts;
+let drafts=JSON.parse(localStorage.getItem("neonx_drafts")||"[]");
+let tier=localStorage.getItem("neonx_tier")||"Guest",currentDraft="";
+const notify=msg=>{const t=$("toast");t.textContent=msg;t.style.display="block";clearTimeout(notify.timer);notify.timer=setTimeout(()=>t.style.display="none",2500)};
+const persist=()=>{localStorage.setItem("neonx_posts",JSON.stringify(posts));localStorage.setItem("neonx_drafts",JSON.stringify(drafts));localStorage.setItem("neonx_tier",tier)};
+const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pages={overview:"Dashboard Overview",analytics:"Analytics",studio:"AI Studio",members:"Membership",community:"Community",admin:"Admin Panel"};
+function navigate(name){document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===name));$("heading").textContent=pages[name];$("crumb").textContent=name.toUpperCase()}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.page)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.go)));
+function chart(id,vals){$(id).innerHTML=vals.map((v,i)=>`<div style="height:${v}%"><span>${["M","T","W","T","F","S","S"][i]}</span></div>`).join("")}
+chart("overview-chart",[38,58,48,78,64,91,72]);chart("analytics-chart",[35,58,45,72,62,82,67]);
+$("period").addEventListener("change",e=>{const d={week:[35,58,45,72,62,82,67],month:[48,65,55,88,71,92,80],year:[42,60,75,55,86,70,95]};chart("analytics-chart",d[e.target.value])});
+function renderFeed(){
+$("feed").innerHTML=posts.length?posts.map((p,i)=>`<div class="feed-item"><div class="avatar">${escapeHTML(p.title.charAt(0).toUpperCase())}</div><div class="feed-content"><b>${escapeHTML(p.title)}</b><div class="feed-meta">${escapeHTML(p.date)}</div><p>${escapeHTML(p.body)}</p><button class="btn ghost delete" data-index="${i}" style="padding:6px 9px">Delete</button></div></div>`).join(""):'<div class="empty">Belum ada postingan.</div>';
+$("post-count").textContent=posts.length+" posts";$("admin-posts").textContent=posts.length;$("overview-posts").textContent=128+posts.length-3;
+document.querySelectorAll(".delete").forEach(b=>b.addEventListener("click",()=>{posts.splice(Number(b.dataset.index),1);persist();renderFeed();notify("Post dihapus dari demo.")}));
+}
+renderFeed();
+$("publish").addEventListener("click",()=>{const title=$("post-title").value.trim(),body=$("post-body").value.trim();if(!title||!body)return notify("Isi judul dan pesan terlebih dahulu.");posts.unshift({title,body,date:"Just now"});persist();renderFeed();$("post-title").value="";$("post-body").value="";notify("Post ditambahkan ke feed lokal.")});
+$("post-clear").addEventListener("click",()=>{$("post-title").value="";$("post-body").value=""});
+function renderDrafts(){$("draft-list").innerHTML=drafts.length?drafts.map((d,i)=>`<div class="tile"><pre style="white-space:pre-wrap;font:12px/1.6 inherit;margin:0">${escapeHTML(d)}</pre><button class="btn ghost remove-draft" data-index="${i}" style="margin-top:9px">Delete draft</button></div>`).join(""):"Belum ada draft tersimpan.";$("admin-drafts").textContent=drafts.length;document.querySelectorAll(".remove-draft").forEach(b=>b.addEventListener("click",()=>{drafts.splice(Number(b.dataset.index),1);persist();renderDrafts();notify("Draft dihapus.")}))}
+renderDrafts();
+$("generate").addEventListener("click",()=>{const topic=$("topic").value.trim()||"NEONX community",type=$("content-type").value,tone=$("tone").value;let text="";if(type==="meme")text=`MEME CONCEPT: ${topic}\nVisual: A futuristic neon city with a mysterious glowing signal.\nCaption: “When the future calls, the community answers.”\nTone: ${tone}`;else if(type==="caption")text=`${topic} — the future is built by people who dare to create. Connect, explore, and bring your next idea to life. #NEONX #${topic.replace(/\W+/g,"")}`;else if(type==="announcement")text=`NEONX COMMUNITY UPDATE\n\nHello, community! We have a new update about ${topic}. Stay connected, share your thoughts, and keep the conversation constructive.\n\n— NEONX Team`;else text=`COMMUNITY POLL\n\nWhat would you like to see next about ${topic}?\nA. New creative content\nB. Community challenges\nC. Project updates\n\nShare your vote and tell us why!`;currentDraft=text;$("output").innerHTML=`<pre style="white-space:pre-wrap;font:12px/1.7 inherit;margin:0">${escapeHTML(text)}</pre>`});
+$("copy").addEventListener("click",async()=>{if(!currentDraft)return notify("Buat draft terlebih dahulu.");try{await navigator.clipboard.writeText(currentDraft);notify("Draft berhasil disalin.")}catch(e){notify("Clipboard tidak tersedia di browser ini.")}});
+$("clear").addEventListener("click",()=>{currentDraft="";$("output").innerHTML='<span class="muted small">Draft akan muncul di sini.</span>'});
+$("save-draft").addEventListener("click",()=>{if(!currentDraft)return notify("Buat draft terlebih dahulu.");drafts.unshift(currentDraft);persist();renderDrafts();notify("Draft tersimpan di browser.")});
+document.querySelectorAll(".use-prompt").forEach(b=>b.addEventListener("click",()=>{$("topic").value=b.dataset.topic;notify("Ide ditambahkan.")}));
+function setTier(value){tier=value;persist();$("tier-status").textContent=tier;$("admin-tier").textContent=tier;$("profile").textContent=tier+" Profile";$("tier-message").textContent="Demo access aktif: "+tier+". Ini tidak memberikan izin online sungguhan."}
+document.querySelectorAll(".choose-tier").forEach(b=>b.addEventListener("click",()=>{setTier(b.dataset.tier);notify("Demo access "+tier+" aktif.")}));
+setTier(tier);
+$("profile").addEventListener("click",()=>notify("Profil demo: "+tier));
+$("save-settings").addEventListener("click",()=>{$("settings-result").textContent="Pengaturan disimpan secara lokal untuk browser ini: "+$("community-name").value;notify("Pengaturan lokal disimpan.")});
+$("export").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(posts,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="neonx-community-posts.json";a.click();URL.revokeObjectURL(url);notify("File ekspor dibuat.")});
+$("reset").addEventListener("click",()=>{if(!confirm("Reset semua data demo NEONX di browser ini?"))return;posts=defaultPosts.slice();drafts=[];tier="Guest";persist();renderFeed();renderDrafts();setTier("Guest");navigate("overview");notify("Demo berhasil di-reset.")});
+})();
+</script>
+</body>
+</html>
