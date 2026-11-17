@@ -11,10 +11,65 @@
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% -10%,#28123d 0,transparent 40%),var(--bg);color:var(--text);font:15px Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:245px 1fr}.sidebar{background:#0b0913;border-right:1px solid var(--line);padding:25px 16px;display:flex;flex-direction:column;gap:26px}.brand{font-size:27px;font-weight:950;letter-spacing:4px}.brand span{color:var(--purple)}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;font-weight:600;margin-top:4px}.section-label{font-size:10px;letter-spacing:2px;color:#776d89;padding:0 11px 8px;text-transform:uppercase}.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#b5acc4;text-align:left;padding:12px 13px;border-radius:10px;display:flex;align-items:center;gap:12px;font-size:13px}.nav button:hover,.nav button.active{background:#281637;color:white;box-shadow:inset 3px 0 var(--purple)}.side-bottom{margin-top:auto}.pill{display:inline-flex;align-items:center;gap:6px;background:#251637;color:#d9b6ff;padding:5px 9px;border-radius:30px;font-size:10px}.main{padding:27px clamp(16px,3vw,38px);min-width:0;max-width:1600px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}.crumb{color:var(--purple);font-size:10px;letter-spacing:2px;text-transform:uppercase}.topbar h1{font-size:27px;margin:6px 0 0}.top-actions{display:flex;align-items:center;gap:9px}.btn{border:1px solid #61417c;background:#29183b;color:white;border-radius:9px;padding:10px 14px;font-weight:650;font-size:12px}.btn:hover{filter:brightness(1.2)}.btn.primary{background:linear-gradient(100deg,#963ce0,#5369ef);border:0}.btn.ghost{background:#171321;border-color:var(--line)}.btn.danger{background:#351b2b;border-color:#70334d}.page{display:none}.page.active{display:block}.notice{background:#20142d;border:1px solid #503267;color:#d8c4e9;padding:12px 14px;border-radius:10px;font-size:12px;line-height:1.6;margin-bottom:17px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:16px}.two{display:grid;grid-template-columns:1.3fr 1fr;gap:15px;margin-bottom:16px}.card{background:linear-gradient(145deg,#191526,#100e19);border:1px solid var(--line);border-radius:15px;padding:18px;min-width:0}.card h2{font-size:16px;margin:0 0 14px}.muted{color:var(--muted)}.small{font-size:11px}.stat{font-size:28px;font-weight:850;margin:9px 0 4px;letter-spacing:-1px}.tag{font-size:10px;color:#d6b1ff;background:#2a193b;padding:4px 8px;border-radius:30px}.chart{height:175px;display:flex;align-items:end;gap:10px;padding:15px 5px 0;border-bottom:1px solid #40334d}.chart>div{flex:1;min-width:6px;border-radius:6px 6px 0 0;background:linear-gradient(180deg,var(--purple),#4c48a5);position:relative}.chart span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--muted)}.chart-labels{display:flex;justify-content:space-between;margin-top:26px;color:var(--muted);font-size:9px}.tile{padding:14px;border:1px solid #342741;background:#15111f;border-radius:11px;margin:9px 0}.tile h3{font-size:13px;margin:0 0 6px}.field{display:block;color:#c1b7d0;font-size:12px;margin:12px 0 5px}input,textarea,select{width:100%;background:#0d0b15;color:white;border:1px solid #40334d;border-radius:9px;padding:11px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--purple)}textarea{min-height:100px;resize:vertical}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.feed-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #30263c}.avatar{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,#a74de5,#315bc1);display:grid;place-items:center;font-weight:800;flex:none}.feed-item:last-child{border-bottom:0}.feed-content{flex:1;min-width:0}.feed-content b{font-size:13px}.feed-content p{font-size:12px;line-height:1.65;color:#c9c0d4;margin:7px 0}.feed-meta{font-size:10px;color:var(--muted)}.bar{height:8px;background:#2d2537;border-radius:20px;overflow:hidden}.bar i{height:100%;display:block;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}table{width:100%;border-collapse:collapse;font-size:12px}td,th{text-align:left;padding:12px 8px;border-bottom:1px solid #30263c}th{color:var(--muted);font-weight:500}.footer{text-align:center;color:#716981;font-size:10px;padding:28px 0 5px}.mobile-title{display:none}.toast{position:fixed;right:20px;bottom:20px;background:#29183b;border:1px solid #8050a6;border-radius:10px;padding:12px 16px;font-size:12px;display:none;z-index:9;max-width:calc(100vw - 40px)}.empty{padding:24px;text-align:center;color:var(--muted);font-size:12px}
 @media(max-width:850px){.app{grid-template-columns:1fr}.sidebar{padding:14px;border-right:0;border-bottom:1px solid var(--line);gap:14px}.brand{font-size:22px}.nav{grid-template-columns:repeat(3,1fr)}.nav button{justify-content:center;padding:10px 5px;font-size:11px;gap:5px}.side-bottom{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.main{padding:18px 14px}.topbar h1{font-size:22px}.topbar{align-items:flex-start}.top-actions .pill{display:none}}
 @media(max-width:430px){.grid{gap:8px}.card{padding:13px}.stat{font-size:23px}.nav button{font-size:10px}.topbar h1{font-size:19px}.btn{padding:9px 10px}}
+/* NEONX AUTH */
+.app{display:none}
+.app.authenticated{display:grid}
+.auth-screen{
+ min-height:100vh;display:flex;align-items:center;justify-content:center;
+ padding:20px;background:radial-gradient(ellipse at 50% 0%,#32134d,transparent 55%),#090811
+}
+.auth-card{
+ width:100%;max-width:420px;padding:28px;background:#12101d;
+ border:1px solid #49305e;border-radius:18px;box-shadow:0 0 35px #8e3caa22
+}
+.auth-logo{text-align:center;font-size:32px;font-weight:950;letter-spacing:5px;margin-bottom:5px}
+.auth-logo span{color:var(--purple)}
+.auth-sub{text-align:center;color:var(--muted);font-size:11px;letter-spacing:2px;margin-bottom:25px}
+.auth-tabs{display:flex;gap:8px;margin-bottom:18px}
+.auth-tabs button{flex:1}
+.auth-message{font-size:12px;line-height:1.6;color:var(--cyan);margin-top:12px;min-height:20px}
+.auth-card .btn{width:100%;margin-top:16px}
+.auth-switch{text-align:center;font-size:12px;color:var(--muted);margin-top:18px}
+.auth-switch a{color:var(--cyan);cursor:pointer}
 </style>
 </head>
 <body>
-<div class="app">
+<div class="auth-screen" id="auth-screen">
+ <div class="auth-card">
+  <div class="auth-logo">NEON<span>X</span></div>
+  <div class="auth-sub">DIGITAL COMMUNITY</div>
+
+  <div class="auth-tabs">
+   <button class="btn primary" id="show-login">LOGIN</button>
+   <button class="btn ghost" id="show-register">REGISTER</button>
+  </div>
+
+  <form id="login-form">
+   <label class="field">Email</label>
+   <input type="email" id="login-email" placeholder="Email address" required>
+   <label class="field">Password</label>
+   <input type="password" id="login-password" placeholder="Password" required>
+   <button class="btn primary" type="submit">LOGIN TO NEONX</button>
+  </form>
+
+  <form id="register-form" hidden>
+   <label class="field">Display Name</label>
+   <input id="register-name" placeholder="Your name" required>
+   <label class="field">Username</label>
+   <input id="register-username" placeholder="Username" required>
+   <label class="field">Email</label>
+   <input type="email" id="register-email" placeholder="Email address" required>
+   <label class="field">Password</label>
+   <input type="password" id="register-password" placeholder="Minimum 8 characters" minlength="8" required>
+   <button class="btn primary" type="submit">CREATE ACCOUNT</button>
+  </form>
+
+  <div class="auth-message" id="auth-message" role="status"></div>
+  <div class="auth-switch">NEONX · Secure community access</div>
+ </div>
+</div>
+
+<div class="app" id="neonx-app">
 <aside class="sidebar">
  <div class="brand">NEON<span>X</span><small>DIGITAL COMMUNITY</small></div>
  <div><div class="section-label">Workspace</div><nav class="nav" id="nav">
@@ -84,8 +139,16 @@
 </main>
 </div>
 <div class="toast" id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (()=>{
+ const SUPABASE_URL = "https://npxykqgtwwrnkpyllxvh.supabase.co/rest/v1/" ;
+const SUPABASE_KEY = "sb_publishable_QzhkkfRirqLNKGxp1wzwWA_fqp8WmkQ" ;
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 const $=id=>document.getElementById(id);
 const defaultPosts=[
 {title:"Welcome to NEONX",body:"Welcome to the community hub. Explore the ecosystem, share ideas, and connect with other creators.",date:"Today"},
@@ -127,6 +190,134 @@ $("profile").addEventListener("click",()=>notify("Profil demo: "+tier));
 $("save-settings").addEventListener("click",()=>{$("settings-result").textContent="Pengaturan disimpan secara lokal untuk browser ini: "+$("community-name").value;notify("Pengaturan lokal disimpan.")});
 $("export").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(posts,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="neonx-community-posts.json";a.click();URL.revokeObjectURL(url);notify("File ekspor dibuat.")});
 $("reset").addEventListener("click",()=>{if(!confirm("Reset semua data demo NEONX di browser ini?"))return;posts=defaultPosts.slice();drafts=[];tier="Guest";persist();renderFeed();renderDrafts();setTier("Guest");navigate("overview");notify("Demo berhasil di-reset.")});
+// NEONX AUTHENTICATION
+
+const authScreen = $("auth-screen");
+const neonxApp = $("neonx-app");
+const authMessage = $("auth-message");
+
+function showAuthMessage(message) {
+  authMessage.textContent = message;
+}
+
+function updateAuthUI(session) {
+  if (session) {
+    authScreen.style.display = "none";
+    neonxApp.classList.add("authenticated");
+
+    const email = session.user.email || "Member";
+    $("profile").textContent = email;
+  } else {
+    authScreen.style.display = "flex";
+    neonxApp.classList.remove("authenticated");
+  }
+}
+
+$("show-login").addEventListener("click", () => {
+  $("login-form").hidden = false;
+  $("register-form").hidden = true;
+  $("show-login").className = "btn primary";
+  $("show-register").className = "btn ghost";
+  showAuthMessage("");
+});
+
+$("show-register").addEventListener("click", () => {
+  $("login-form").hidden = true;
+  $("register-form").hidden = false;
+  $("show-login").className = "btn ghost";
+  $("show-register").className = "btn primary";
+  showAuthMessage("");
+});
+
+$("register-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = $("register-name").value.trim();
+  const username = $("register-username").value.trim();
+  const email = $("register-email").value.trim();
+  const password = $("register-password").value;
+
+  if (!/^[a-zA-Z0-9_]{3,20}$/.test(username)) {
+    return showAuthMessage("Username harus 3–20 karakter, huruf, angka, atau underscore.");
+  }
+
+  showAuthMessage("Creating your account...");
+
+  const { data, error } = await supabaseClient.auth.signUp({
+    email,
+    password,
+    options: {
+      data: {
+        username,
+        display_name: name
+      }
+    }
+  });
+
+  if (error) {
+    return showAuthMessage(error.message);
+  }
+
+  if (data.session) {
+    updateAuthUI(data.session);
+    showAuthMessage("Account successfully created!");
+  } else {
+    showAuthMessage("Registrasi berhasil. Periksa email untuk konfirmasi akun sebelum login.");
+  }
+});
+
+$("login-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = $("login-email").value.trim();
+  const password = $("login-password").value;
+
+  showAuthMessage("Signing in...");
+
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if (error) {
+    return showAuthMessage(error.message);
+  }
+
+  updateAuthUI(data.session);
+  notify("Welcome to NEONX!");
+});
+
+const logoutButton = document.createElement("button");
+logoutButton.className = "btn danger";
+logoutButton.textContent = "Logout";
+logoutButton.id = "logout-button";
+$("profile").after(logoutButton);
+
+logoutButton.addEventListener("click", async () => {
+  const { error } = await supabaseClient.auth.signOut();
+
+  if (error) {
+    return notify(error.message);
+  }
+
+  updateAuthUI(null);
+  notify("You have logged out.");
+});
+
+supabaseClient.auth.onAuthStateChange((event, session) => {
+  updateAuthUI(session);
+});
+
+(async () => {
+  const { data, error } = await supabaseClient.auth.getSession();
+
+  if (error) {
+    showAuthMessage("Unable to check login session.");
+    return;
+  }
+
+  updateAuthUI(data.session);
+})();
 })();
 </script>
 </body>
